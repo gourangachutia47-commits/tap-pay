@@ -1,0 +1,18 @@
+{
+  "short_name": "Tap Pay",
+  "name": "Tap Pay — Instant Trading & Rewards",
+  "description": "Tap Pay Mobile Application",
+  "icons": [
+    {
+      "src": "/tap-pay-logo.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#2539C1",
+  "theme_color": "#2539C1",
+  "display": "standalone",
+  "orientation": "portrait"
+}
