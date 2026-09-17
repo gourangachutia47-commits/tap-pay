@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import BottomNav from './components/BottomNav';
 import FloatingChat from './components/FloatingChat';
-import DownloadAppBanner from './components/DownloadAppBanner';
 import Home from './pages/Home';
 import BuyRP from './pages/BuyRP';
 import RPWithdrawal from './pages/RPWithdrawal';
@@ -41,9 +40,6 @@ function AppRoutes() {
 
   return (
     <div className="flex flex-col h-full relative">
-      {/* Smart banner inviting visitors to download the APK */}
-      <DownloadAppBanner />
-
       <Routes>
         {/* Auth Routes */}
         <Route path="/login" element={<AuthRoute><Login /></AuthRoute>} />
