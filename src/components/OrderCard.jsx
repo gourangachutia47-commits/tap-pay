@@ -1,11 +1,5 @@
-import { initiatePayment } from '../data/upi';
-
 export default function OrderCard({ order, onReceive, mode = 'buy' }) {
   const handleReceive = () => {
-    if (mode === 'buy') {
-      // Trigger UPI payment via Paytm deep link
-      initiatePayment(order.amount, order.id);
-    }
     if (onReceive) onReceive(order);
   };
 
@@ -24,7 +18,7 @@ export default function OrderCard({ order, onReceive, mode = 'buy' }) {
             <span className="text-gray-500 text-xs">Reward:</span>
             <span className="text-gray-900 font-bold text-sm">{order.reward}</span>
             {order.bonus > 0 && (
-              <span className="text-green-500 text-xs font-semibold">+{order.bonus.toFixed(1)}</span>
+              <span className="text-emerald-600 text-xs font-semibold">+{order.bonus.toFixed(1)}</span>
             )}
           </div>
         </div>
